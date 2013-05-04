@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>index</title>
+</head>
+<body>
+<script type="text/javascript">
+$(function(){
+	$("#id").show();
+})
+var fun = {
+	createNew:function(){
+		var F = {};
+		F.name = "test";
+		F.sex = "male";
+		F.getName = function(){ alert(F.name);}
+		return F;
+	}
+}
+var fun1 = fun.createNew();
+fun1.getName();
+console.log(fun1.name);
+console.log(fun1.sex);
+</script>
+</body>
+</html>
